@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerkleLibrary", "MerkleLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerkleLibrary.Tests", "MerkleLibrary.Tests\MerkleLibrary.Tests.csproj", "{C543BEE1-6D87-40B6-AB55-75FC2AF8BE36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfReserveAPI", "ProofOfReserveAPI\ProofOfReserveAPI.csproj", "{3866D06A-E727-4F9E-97F3-61D2F7C3F286}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{C543BEE1-6D87-40B6-AB55-75FC2AF8BE36}.Release|x64.Build.0 = Release|Any CPU
 		{C543BEE1-6D87-40B6-AB55-75FC2AF8BE36}.Release|x86.ActiveCfg = Release|Any CPU
 		{C543BEE1-6D87-40B6-AB55-75FC2AF8BE36}.Release|x86.Build.0 = Release|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Debug|x64.Build.0 = Debug|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Debug|x86.Build.0 = Debug|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Release|x64.ActiveCfg = Release|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Release|x64.Build.0 = Release|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Release|x86.ActiveCfg = Release|Any CPU
+		{3866D06A-E727-4F9E-97F3-61D2F7C3F286}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
