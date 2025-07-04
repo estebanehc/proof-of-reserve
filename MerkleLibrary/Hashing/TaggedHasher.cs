@@ -21,7 +21,8 @@ namespace MerkleLibrary.Hashing
         {
             var message = Encoding.UTF8.GetBytes(input);
             return TaggedHash(_leafTagHash, message);
-        }
+        }
+
         /// <summary>
         /// Computes the hash of a Merkle branch by combining the left and right child hashes.
         /// </summary>

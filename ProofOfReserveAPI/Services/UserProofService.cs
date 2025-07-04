@@ -34,19 +34,23 @@ namespace ProofOfReserveAPI.Services
         }
 
         public MerkleProofResult? GetProofForUser(int userId)
-    {
-        if (!_idToSerialized.TryGetValue(userId, out var leafValue))
-            return null;
-
-        var path = _tree.GetMerkleProof(_serializedLeaves, leafValue);
-        return new MerkleProofResult
         {
-            UserBalance = leafValue,
-            ProofPath = path.Select(p => (ConvertToHex(p.Hash), p.Direction)).ToList()
-        };
-    }
+            if (!_idToSerialized.TryGetValue(userId, out var leafValue))
+                return null;
 
-    private static string ConvertToHex(byte[] hash) =>
-        BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+            var path = _tree.GetMerkleProof(_serializedLeaves, leafValue);
+                return new MerkleProofResult
+                {
+                    UserBalance = leafValue,
+                    ProofPath = [.. path.Select(p => new ProofNodeDto
+                    {
+                        Hash = ConvertToHex(p.Hash),
+                        Direction = p.Direction
+                    })]
+                };
+        }
+
+        private static string ConvertToHex(byte[] hash) =>
+            BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
     }
 }

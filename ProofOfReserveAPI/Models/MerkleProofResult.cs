@@ -8,8 +8,8 @@
         public required string UserBalance { get; init; }
 
         /// <summary>
-        /// Each item is (hexHash, direction: 0=left, 1=right)
+        /// Ordered list of proof steps from the user's leaf to the root.
         /// </summary>
-        public required List<(string Hash, int Direction)> ProofPath { get; init; }
+        public required List<ProofNodeDto> ProofPath { get; init; }
     }
 }
